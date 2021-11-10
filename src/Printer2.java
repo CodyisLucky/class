@@ -24,7 +24,7 @@ public class Printer2 {
         int pagesToPrint = pages;
         if(this.duplex){
             System.out.println("Printing double sided.");
-            if ((pages & 1) == 0){
+            if ((pages & 1) == 0){ //checks the first bit of the number, if 0 it is even, if 1 it is odd.
                 pagesToPrint = pages / 2;
             }
             else{
